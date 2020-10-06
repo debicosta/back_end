@@ -11,8 +11,9 @@
 # sourcing necessary files ----
 source("./config.R")
 source("./run_api.R")
+
 # install necessary packages --- it would be better to create a function
 library(plumber)
 
-# running the front-end ---
-run_shiny_front()
+# running the back-end (APIs) ---
+run_api_back()

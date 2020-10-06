@@ -10,10 +10,14 @@
 
 # sourcing necessary files ----
 source("./config.R")
-source("./run_api.R")
+source("./create_api.R")
 
 # install necessary packages --- it would be better to create a function
 library(plumber)
 
 # running the back-end (APIs) ---
-run_api_back()
+r <- plumb("create_api.R")
+# Where 'plumber.R' is the location of the file shown above
+
+# Run r on port 8000
+r$run(host = "0.0.0.0",  port = 8080)

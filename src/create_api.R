@@ -1,7 +1,6 @@
 # script name:
 # plumber_example.R
 
-
 # Define API
 
 #* @get /get_sum

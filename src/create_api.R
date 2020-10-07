@@ -10,8 +10,8 @@
 sum_inputs <- function(x,y){
   
   # Ensure input data format is correct
-  "x"= as.numeric(x)
-  "y"=as.numeric(y)
+  x= as.numeric(x)
+  y=as.numeric(y)
   
   # sum of two numbe rin inputs
   sum(x,y, na.rm = TRUE)
